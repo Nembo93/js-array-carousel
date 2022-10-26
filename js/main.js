@@ -25,9 +25,23 @@ for (i = 0; i < immagini.length; i++){
 }
 
 // CREARE FUNZIONE PER DARE AI BOTTONI POSSIBILITà DI rimuovere AD UN ELEMENTO DELLA LISTA PER VOLTA D_none
+const button_top = document.getElementById(`buttonTop`);
+const button_but = document.getElementById(`buttonBut`);
+
 i = 0;
 let courrent = i;
 document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+
+button_but.addEventListener("click", firstFunction);
+function firstFunction(){
+    courrent = courrent + 1;
+    document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+    let prev = courrent - 1;
+    document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);
+}
+
+
+
 
 // function firstFunction(){
 //     if (courrentIndex == 0){
@@ -35,9 +49,6 @@ document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
 //     }
 //     courrentIndex = i+1;
 // }
-
-// const button_top = getElementById(`buttonTop`);
-// const button_but = getElementById(`buttonBut`);
 
 // function firstFunction(){    
 // }
