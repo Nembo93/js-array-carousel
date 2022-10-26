@@ -21,8 +21,7 @@ for (i = 0; i < immagini.length; i++){
     // Inserire l?immagine nel div con classe item
     let jsImg = document.createElement(`img`);
     jsImg.src = immagini[i];
-    document.getElementsByClassName(`item`).appendChild(jsImg);
-    // document.getElementsByClassName(`item`).innerHTML(immagini[i]);
+    document.getElementsByClassName(`item`)[i].appendChild(jsImg);
 }
 
 
