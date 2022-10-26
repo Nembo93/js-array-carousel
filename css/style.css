@@ -15,7 +15,27 @@
     align-items: center;
 }
 .main_box{
+    background-color: blue;
     width: 500px;
     height: 250px;
-    background-color: blue;
+    text-align: center;
+    position: relative;
+}
+.item{
+    /* display: none; */
+}
+/* .myButton{
+    position: absolute;
+} */
+.myButtonTop{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.myButtonBut{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
 }
