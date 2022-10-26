@@ -11,7 +11,6 @@ const immagini = [
 ];
 console.log(immagini);
 
-
 // PER OGNI ELEMENTO DELLA LISTA CREARE UN DIV ALL'INTERNO DI MAIN_BOX A CUI AGGIUNGERE UNA CLASSE E INSERIRCI L'IMMAGINE
 for (i = 0; i < immagini.length; i++){
     let item = document.createElement(`div`);
@@ -27,18 +26,38 @@ for (i = 0; i < immagini.length; i++){
 // CREARE FUNZIONE PER DARE AI BOTTONI POSSIBILITà DI rimuovere AD UN ELEMENTO DELLA LISTA PER VOLTA D_none
 const button_top = document.getElementById(`buttonTop`);
 const button_but = document.getElementById(`buttonBut`);
-
 i = 0;
 let courrent = i;
 document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
 
-button_but.addEventListener("click", firstFunction);
-function firstFunction(){
-    courrent = courrent + 1;
-    document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
-    let prev = courrent - 1;
-    document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);
-}
+    button_but.addEventListener("click", firstFunction);
+    function firstFunction(){
+        courrent = courrent + 1;
+        document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+        let prev = courrent - 1;
+        document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);            
+    }
+    
+    button_top.addEventListener("click", secondFunction);
+    function secondFunction(){
+        courrent = courrent - 1;
+        document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+        let prev = courrent + 1;
+        document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);                
+    }
+
+    
+
+
+
+// FUNZIONANTE!!!!!!!
+// button_but.addEventListener("click", firstFunction);
+// function firstFunction(){
+//     courrent = courrent + 1;
+//     document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+//     let prev = courrent - 1;
+//     document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);
+// }
 
 
 
@@ -54,10 +73,6 @@ function firstFunction(){
 // }
 // document.getElementsByClassName(`item`)[i].classList.add(`d_none`);
 // document.getElementsByClassName(`item`)[i].classList.add(`d_block`);
-
-
-
-
 
 
 // const immaggini = [
