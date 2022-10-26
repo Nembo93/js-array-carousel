@@ -46,6 +46,32 @@ document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
         document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);                
     }
 
+
+ 
+    // button_but.addEventListener("click", firstFunction);
+    // function firstFunction(){
+    //     courrent = courrent + 1;
+    //     if (courrent > immagini.lenght){
+    //         courrent = 0;
+    //     } 
+    //     document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+    //     let prev = courrent - 1;
+    //     document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);            
+    // }
+    
+    // button_top.addEventListener("click", secondFunction);
+    // function secondFunction(){
+    //     courrent = courrent - 1;
+    //     if (courrent < immagini.lenght){
+    //         courrent = immagini.length;
+    //     }
+    //     document.getElementsByClassName(`item`)[courrent].classList.remove(`d_none`);
+    //     let prev = courrent + 1;
+    //     document.getElementsByClassName(`item`)[prev].classList.add(`d_none`);                
+    // }
+
+
+   
     
 
 
