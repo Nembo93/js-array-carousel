@@ -22,6 +22,10 @@
     position: relative;
 }
 .item{
+    width: 500px;
+    height: 250px;
+    background-color: green;
+    border: 5px solid red;
     /* display: none; */
 }
 /* .myButton{
