@@ -17,15 +17,23 @@ for (i = 0; i < immagini.length; i++){
     let item = document.createElement(`div`);
     item.classList.add(`item`);
     document.getElementById(`main_box`).appendChild(item);
-
+    if (i !== 0){
+        document.getElementsByClassName(`item`)[i].classList.add(`d_none`);
+    }
     // Inserire l?immagine nel div con classe item
     let jsImg = document.createElement(`img`);
     jsImg.src = immagini[i];
     document.getElementsByClassName(`item`)[i].appendChild(jsImg);
 }
 
+// let courrentIndex = 0;
+// const button_top = getElementById(`buttonTop`);
+// const button_but = getElementById(`buttonBut`);
 
-
+// function firstFunction(){    
+// }
+// document.getElementsByClassName(`item`)[i].classList.add(`d_none`);
+// document.getElementsByClassName(`item`)[i].classList.add(`d_block`);
 
 
 

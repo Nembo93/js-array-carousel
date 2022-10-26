@@ -28,9 +28,7 @@
     border: 5px solid red;
     /* display: none; */
 }
-/* .myButton{
-    position: absolute;
-} */
+
 .myButtonTop{
     position: absolute;
     top: 5%;
@@ -45,4 +43,11 @@
 }
 img{
     width: 100%;
+}
+
+.d_none{
+     display: none;
+}
+.d_block{
+    display: block;
 }
